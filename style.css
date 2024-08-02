@@ -44,14 +44,71 @@ section.home {
     border-radius: 25px;
 }
 
-.produtos,
+.racao,
 .servicos,
+.banho,
 .acessorios,
 .medicamentos {
     width: 100%;
     background-color: #fff;
     margin-bottom: 50px;
     border-radius: 25px;
+}
+
+/* .racao{
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-row-gap: 1px;
+    grid-column-gap: 9px;
+} */
+
+.racao-cachorro {
+    display: flex;
+    gap: 150px;
+    margin-left: 50px;
+    justify-content: center;
+}
+
+.racao-gato {
+    display: flex;
+    gap: 150px;
+    margin-left: 50px;
+    justify-content: center;
+}
+
+.produto1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.produtos-banho {
+    display: flex;
+    gap: 150px;
+    margin-left: 50px;
+    justify-content: center;
+}
+
+.produtos-acessorios {
+    display: flex;
+    gap: 90px;
+    margin-left: 50px;
+    justify-content: center;
+}
+
+.produtos-medicamentos {
+    display: flex;
+    gap: 150px;
+    margin-left: 50px;
+    justify-content: center;
+}
+
+
+
+p {
+    font-weight: bold;
+    text-align: center;
 }
 
 h1,
@@ -77,5 +134,5 @@ footer {
     color: #fff;
     padding: 1em;
     text-align: center;
-    clear: both;    
+    clear: both;
 }
