@@ -1,35 +1,92 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
     background-color: #C8E7F0;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-}
-
-header nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+nav {
     display: flex;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
+    height: 80px;
     width: 100%;
-
+    background-color: #3a2f2f;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
 }
 
-header nav ul li {
-    margin-right: 20px;
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
 }
 
-header nav a {
-    color: #fff;
+nav ul li {
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: #f2f2f2;
     text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    background: #ce8a42;
+}
+
+nav .menu i {
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 730px) {
+    nav .menu i {
+        display: block;
+    }
+
+    nav ul {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: #3a2f2f;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+    }
+
+    nav ul.open {
+        left: 0;
+    }
+
+    nav ul li {
+        width: 100%;
+        margin: 50px 0;
+    }
+
+    nav ul li a {
+        font-size: 23px;
+    }
+
+    nav ul li a.active,
+    nav ul li a:hover {
+        background: none;
+        color: #ce8a42;
+    }
 }
 
 main {
@@ -62,6 +119,7 @@ main {
     gap: 150px;
     margin-left: 50px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .racao-gato {
@@ -69,6 +127,8 @@ main {
     gap: 150px;
     margin-left: 50px;
     justify-content: center;
+    flex-wrap: wrap;
+
 }
 
 .produto1 {
@@ -79,7 +139,7 @@ main {
     background-color: #d4c8f093;
     padding: 5px;
     border-radius: 24px;
-
+    flex-wrap: wrap;
 }
 
 .produto1:hover {
@@ -93,6 +153,7 @@ main {
     gap: 150px;
     margin-left: 50px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .produtos-acessorios {
@@ -100,6 +161,7 @@ main {
     gap: 90px;
     margin-left: 50px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .produtos-medicamentos {
@@ -107,6 +169,7 @@ main {
     gap: 150px;
     margin-left: 50px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 p {
@@ -122,43 +185,6 @@ h2 {
 
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-a:hover {
-    background-color: #bf7272;
-    background-color: rgba(0, 0, 0, 0.1);
-  }
-
-  a:link {
-    background-color: ;
-   }
-
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 1em;
-    text-align: center;
-    clear: both;
-}
 
 #shampoo-gato {
     width: 125px;
@@ -171,9 +197,24 @@ footer {
     border-radius: 25px;
 }
 
+.hospedagem>img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+    border-radius: 25px;
+}
+
 .taxipet>img {
     width: 100%;
     height: auto;
     margin-bottom: 50px;
     border-radius: 25px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    clear: both;
 }
