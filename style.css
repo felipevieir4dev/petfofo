@@ -8,7 +8,6 @@ body {
 header {
     background-color: #333;
     color: #fff;
-    padding: 1em;
     text-align: center;
 }
 
@@ -18,6 +17,10 @@ header nav ul {
     padding: 0;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
 }
 
 header nav ul li {
@@ -36,11 +39,10 @@ main {
     padding: 2em;
 }
 
-section.home {
-    text-align: center;
+.home>img {
     width: 100%;
-    background-color: #fff;
-    margin: 20px;
+    height: auto;
+    margin-bottom: 50px;
     border-radius: 25px;
 }
 
@@ -54,13 +56,6 @@ section.home {
     margin-bottom: 50px;
     border-radius: 25px;
 }
-
-/* .racao{
-    display: grid;
-    grid-template-columns: repeat(3, 150px);
-    grid-row-gap: 1px;
-    grid-column-gap: 9px;
-} */
 
 .racao-cachorro {
     display: flex;
@@ -81,7 +76,17 @@ section.home {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: #d4c8f093;
+    padding: 5px;
+    border-radius: 24px;
+
 }
+
+.produto1:hover {
+    width: 270px;
+    height: 270px;
+}
+
 
 .produtos-banho {
     display: flex;
@@ -104,8 +109,6 @@ section.home {
     justify-content: center;
 }
 
-
-
 p {
     font-weight: bold;
     text-align: center;
@@ -120,14 +123,34 @@ h2 {
 }
 
 ul {
-    list-style: none;
+    list-style-type: none;
     margin: 0;
     padding: 0;
+    overflow: hidden;
+    background-color: #333;
+
 }
 
 li {
-    margin-bottom: 10px;
+    float: left;
 }
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #bf7272;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  a:link {
+    background-color: ;
+   }
 
 footer {
     background-color: #333;
@@ -137,6 +160,20 @@ footer {
     clear: both;
 }
 
-#shampoo-gato{
+#shampoo-gato {
     width: 125px;
+}
+
+.clinica>img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+    border-radius: 25px;
+}
+
+.taxipet>img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+    border-radius: 25px;
 }
