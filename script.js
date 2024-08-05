@@ -1,5 +1,5 @@
 var ul = document.querySelector('nav ul');
-var menuBtn = document.querySelector('.menu i');
+var menu = document.querySelector('.menu i');
 
 function menuShow() {
     if (ul.classList.contains('open')) {

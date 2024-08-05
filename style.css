@@ -52,7 +52,7 @@ nav .menu i {
     display: none;
 }
 
-@media (max-width: 730px) {
+@media (max-width: 920px) {
     nav .menu i {
         display: block;
     }
