@@ -8,26 +8,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style.css">
 
-    <script src="./script.js"></script>
 </head>
 
 <body>
-    <nav>
+    <header id="menu">
+        <nav>
             <div class="menu">
-                <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
+                <i class="fa fa-bars fa-2x"></i>
             </div>
 
-            <ul>
-                <li><a href="#home" class="active">Home</a></li>
+            <ul class="active">
+                <li><a href="#home">Home</a></li>
                 <li><a href="#produtos">Produtos</a></li>
                 <li><a href="#acessorios">Acessórios e Brinquedos</a></li>
                 <li><a href="#medicamentos">Medicamentos</a></li>
                 <li><a href="#servicos">Serviços</a></li>
             </ul>
         </nav>
+    </header>
     <main>
         <section class="home" id="home">
-            <img src="./assets/servicos/home-section.png" alt="Bem-vindo ao Petfofo! Aqui você encontra tudo para o seu bichinho de estimação!">
+            <img src="./assets/servicos/home-section.png"
+                alt="Bem-vindo ao Petfofo! Aqui você encontra tudo para o seu bichinho de estimação!">
         </section>
         <section class="racao" id="produtos">
             <h2>Ração para cachorro</h2>
@@ -100,7 +102,7 @@
                     <p>Perfume Para Cachorro</p>
                     <p>R$47,90</p>
                 </div>
-        
+
                 <div class="produto1">
                     <img src="./assets/produtos-de-banho/Shampoo-Gato.jpg" alt="shampoo para gato" id="shampoo-gato">
                     <p>Shampoo para Gato</p>
@@ -172,7 +174,8 @@
                     <p>R$ 80,85 UND</p>
                 </div>
                 <div class="produto1">
-                    <img src="./assets/medicamentos/medicamento4.png" alt="Hidratante para Patas - Cachorro e Gato - 20g">
+                    <img src="./assets/medicamentos/medicamento4.png"
+                        alt="Hidratante para Patas - Cachorro e Gato - 20g">
                     <p>Hidratante Para Patas Cachorro e Gato - 20G</p>
                     <p>R$ 35,99 UND</p>
                 </div>
@@ -187,10 +190,20 @@
             <section class="clinica">
                 <!-- <h2>Cliníca</h2> -->
                 <img src="./assets/servicos/banner-clinica.png" alt="Clínicas para seu pet">
+                <a href="#menu">
+                    <button>
+                        <img src="./assets/botao-voltar.png" alt="botao para voltar ao menu principal">
+                    </button>
+                </a>
             </section>
             <section class="hospedagem">
                 <!-- <h2>Hospedagem</h2> -->
-                 <img src="./assets/servicos/banner-hospedagem.png" alt="">
+                <img src="./assets/servicos/banner-hospedagem.png" alt="">
+                <a href="#menu">
+                    <button>
+                        <img src="./assets/botao-voltar.png" alt="botao para voltar ao menu principal">
+                    </button>
+                </a>
             </section>
             <section class="taxipet">
                 <!-- <h2>Pet Táxi</h2> -->
@@ -211,5 +224,6 @@
         <p>&copy; 2024 Petfofo. Todos os direitos reservados.</p>
     </footer>
 </body>
+<script src="./script.js"></script>
 
 </html>

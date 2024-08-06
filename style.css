@@ -52,18 +52,26 @@ nav .menu i {
     display: none;
 }
 
+ .active {
+    visibility: 1;
+    transition: all ease-in 0.5s;
+}
+
+.desactive {
+    visibility: hidden;
+    transition: all ease-in 0.5s;
+}
+
 @media (max-width: 920px) {
     nav .menu i {
         display: block;
     }
 
     nav ul {
-        position: fixed;
+        position: absolute;
         top: 80px;
-        left: -100%;
+        left: 0px;
         background-color: #3a2f2f;
-        height: 100vh;
-        width: 100%;
         text-align: center;
         display: block;
         transition: all 0.3s ease;
